@@ -1,0 +1,19 @@
+JSDev, A JavaScript Development Tool
+
+
+Douglas Crockford
+douglas@crockford.com
+
+2012-01-04
+
+JSDev is a filter that activates selected comments, making them executable.
+This makes it possible to put development, performance, and testing scaffolding,
+into a source file. The scaffolding is removed by minification, but is activated
+by JSDev.
+
+JSDev looks for comments in this form:
+
+    /*<cmd> <stuff>*/
+
+Where the <cmd> is named in the command line, and the stuff becomes the
+development-mode goodness.
